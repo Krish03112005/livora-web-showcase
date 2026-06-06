@@ -59,7 +59,7 @@ function App() {
           src={assets.mobileShowcase}
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute left-[-14vw] top-[27.2svh] z-10 w-[129.5vw] max-w-none select-none"
+          className="pointer-events-none absolute left-[-10vw] top-[35svh] z-10 w-[110vw] max-w-none select-none"
         />
 
         <div className="relative z-20 flex flex-col items-center px-[7.4vw] pt-[3.7svh] text-center">
