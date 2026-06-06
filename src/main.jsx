@@ -62,14 +62,14 @@ function App() {
           className="pointer-events-none absolute left-1/2 bottom-0 transform -translate-x-1/2 z-10 w-[100vw] max-w-none select-none"
         />
 
-        <div className="relative z-20 flex flex-col items-center px-[7.4vw] pt-[6.7svh] text-center">
+        <div className="relative z-20 flex flex-col items-center px-[7.4vw] pt-[2svh] text-center">
           <img
             src={assets.logo}
             alt="Livora"
-            className="h-auto w-[35.7vw] min-w-[7.2rem] max-w-[9.3rem]"
+            className="h-auto w-[35.7vw] max-w-[7.5rem]"
           />
 
-          <h1 className="mt-[5.6svh] max-w-[91vw] text-[clamp(1.9rem,7.9vw,2.25rem)] font-bold leading-[1.05] tracking-normal text-white">
+          <h1 className="mt-[3.6svh] max-w-[91vw] text-[clamp(1.9rem,7.9vw,2.25rem)] font-bold leading-[1.05] tracking-normal text-white">
             <span className="block">Find, List &amp; Discover</span>
             <span className="block sm:inline-block sm:whitespace-normal whitespace-nowrap">Properties Effortlessly</span>
           </h1>
