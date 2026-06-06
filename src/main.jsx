@@ -59,7 +59,7 @@ function App() {
           src={assets.mobileShowcase}
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute left-1/2 bottom-0 transform -translate-x-1/2 z-10 w-[85vw] max-w-none select-none"
+          className="pointer-events-none absolute left-1/2 bottom-0 transform -translate-x-1/2 z-10 w-[100vw] max-w-none select-none"
         />
 
         <div className="relative z-20 flex flex-col items-center px-[7.4vw] pt-[6.7svh] text-center">
@@ -69,8 +69,9 @@ function App() {
             className="h-auto w-[35.7vw] min-w-[7.2rem] max-w-[9.3rem]"
           />
 
-          <h1 className="mt-[5.6svh] max-w-[91vw] text-[clamp(1.9rem,7.9vw,2.25rem)] font-bold leading-[1.15] tracking-normal text-white">
-            Find, List &amp; Discover Properties Effortlessly
+          <h1 className="mt-[5.6svh] max-w-[91vw] text-[clamp(1.9rem,7.9vw,2.25rem)] font-bold leading-[1.05] tracking-normal text-white">
+            <span className="block">Find, List &amp; Discover</span>
+            <span className="block sm:inline-block sm:whitespace-normal whitespace-nowrap">Properties Effortlessly</span>
           </h1>
 
           <p className="mt-[2.25svh] max-w-[86vw] text-[clamp(0.88rem,3.35vw,1rem)] font-normal leading-[1.15] text-white/84">
