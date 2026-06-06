@@ -59,10 +59,10 @@ function App() {
           src={assets.mobileShowcase}
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute left-[-10vw] top-[35svh] z-10 w-[110vw] max-w-none select-none"
+          className="pointer-events-none absolute left-[-6vw] top-[50svh] z-10 w-[95vw] max-w-none select-none"
         />
 
-        <div className="relative z-20 flex flex-col items-center px-[7.4vw] pt-[3.7svh] text-center">
+        <div className="relative z-20 flex flex-col items-center px-[7.4vw] pt-[6.7svh] text-center">
           <img
             src={assets.logo}
             alt="Livora"
@@ -79,7 +79,7 @@ function App() {
             experience.
           </p>
 
-          <div className="mt-[2.8svh] flex w-full items-center justify-center gap-[2.7vw]">
+          <div className="mt-[4.8svh] flex w-full items-center justify-center gap-[2.7vw]">
             <button
               type="button"
               onClick={() => setIsDownloadModalOpen(true)}
