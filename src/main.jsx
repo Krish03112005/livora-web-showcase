@@ -59,7 +59,7 @@ function App() {
           src={assets.mobileShowcase}
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute left-[-6vw] top-[50svh] z-10 w-[95vw] max-w-none select-none"
+          className="pointer-events-none absolute left-1/2 bottom-0 transform -translate-x-1/2 z-10 w-[85vw] max-w-none select-none"
         />
 
         <div className="relative z-20 flex flex-col items-center px-[7.4vw] pt-[6.7svh] text-center">
@@ -86,7 +86,7 @@ function App() {
               className="inline-flex h-[clamp(2rem,7.7vw,2.35rem)] items-center justify-center gap-[0.46rem] rounded-full border border-white/25 bg-[#020715]/95 px-[3.9vw] text-[clamp(0.7rem,3.1vw,0.93rem)] font-bold text-white shadow-[0_10px_28px_rgba(0,0,0,0.28),inset_0_0_0_1px_rgba(37,99,235,0.3)] outline-offset-4 transition hover:-translate-y-0.5 hover:bg-[#07112b] focus-visible:outline focus-visible:outline-2 focus-visible:outline-white/80"
             >
               <Download className="size-[clamp(0.9rem,3.9vw,1.1rem)]" aria-hidden="true" />
-              Download APK for Android
+              Download APK
             </button>
             <a
               href={GITHUB_REPO_URL}
