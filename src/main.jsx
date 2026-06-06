@@ -115,7 +115,7 @@ function App() {
         <img
           src={assets.desktopPhoneHome}
           alt="Livora home screen phone mockup"
-          className="pointer-events-none absolute left-[2.8vw] top-[17.6svh] z-20 w-[37vw] max-w-[60rem] select-none"
+          className="pointer-events-none absolute left-[2.8vw] bottom-0 z-20 w-[45vw] max-w-none select-none"
         />
 
         <img
