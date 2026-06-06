@@ -6,27 +6,14 @@ import "./styles.css";
 
 const assets = {
   logo: "/assets/livora%201.png",
-  createEmpty: "/assets/create-property-empty.png",
-  createLong: "/assets/frame-10-partial.png",
-  createUploading: "/assets/add-property-uploading.png",
-  homeFeatured: "/assets/Home-2.png",
-  saved: "/assets/Saved%20pAGE.png",
-  appIconMockup: "/assets/app-icon-mockup.png",
   mobileShowcase: "/assets/Create_a_premium_product_showcase_202606052149%202.png",
+  desktopScreens: "/assets/group%20of%20screen.png",
+  desktopPhoneHome: "/assets/phone-mock1.png",
+  desktopPhoneSearch: "/assets/phone-mock2.png",
 };
 
 const GITHUB_REPO_URL = "https://github.com/Krish03112005/rentmitra";
 const APK_DOWNLOAD_URL = "/livora.apk";
-
-function PhoneShot({ src, alt, className }) {
-  return (
-    <img
-      src={src}
-      alt={alt}
-      className={`absolute max-w-none object-cover drop-shadow-[0_18px_34px_rgba(0,0,0,0.28)] ${className}`}
-    />
-  );
-}
 
 function GithubMark({ className = "size-6" }) {
   return (
@@ -114,83 +101,71 @@ function App() {
         </div>
       </section>
 
-      <div className="absolute inset-0 hidden bg-[radial-gradient(circle_at_54%_42%,rgba(37,99,235,0.34),transparent_34rem),linear-gradient(90deg,rgba(37,115,255,0.12),transparent_36%,rgba(0,0,0,0.12)_78%)] sm:block" />
+      <section className="relative z-20 hidden min-h-[100svh] w-full overflow-hidden sm:block">
+        <div className="absolute inset-0 bg-[linear-gradient(112deg,#1978f0_0%,#1459be_28%,#0b3f91_48%,#082b66_66%,#010816_100%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_47%_47%,rgba(38,119,255,0.22),transparent_28rem),linear-gradient(90deg,rgba(28,129,255,0.3)_0%,transparent_26%,rgba(0,0,0,0.25)_100%)]" />
 
-      <div className="pointer-events-none absolute inset-0 z-0 hidden xl:block overflow-hidden" aria-hidden="true">
-        <div className="absolute inset-0 animate-vertical-scroll">
-          <PhoneShot
-            src={assets.createEmpty}
-            alt=""
-            className="left-[3.2vw] top-[2.2vh] w-[14.1vw]"
-          />
-          <PhoneShot
-            src={assets.createUploading}
-            alt=""
-            className="left-[3.2vw] top-[53.1vh] w-[14.1vw]"
-          />
-          <PhoneShot
-            src={assets.createLong}
-            alt=""
-            className="left-[18.35vw] top-[6vh] w-[16.2vw]"
-          />
-          <PhoneShot
-            src={assets.homeFeatured}
-            alt=""
-            className="left-[18.35vw] top-[44vh] w-[16.2vw]"
-          />
-          <PhoneShot
-            src={assets.saved}
-            alt=""
-            className="left-[18.35vw] top-[82vh] w-[16.1vw]"
-          />
-        </div>
-      </div>
+        <img
+          src={assets.desktopScreens}
+          alt=""
+          aria-hidden="true"
+          className="pointer-events-none absolute left-0 top-0 z-10 h-[100svh] w-auto max-w-none select-none"
+        />
 
-      <img
-        src={assets.logo}
-        alt="Livora"
-        className="absolute left-1/2 top-[4.5svh] z-20 hidden h-auto w-[8.8rem] -translate-x-1/2 sm:block md:top-[5.5svh] md:w-[9.2rem]"
-      />
+        <img
+          src={assets.desktopPhoneHome}
+          alt="Livora home screen phone mockup"
+          className="pointer-events-none absolute left-[2.8vw] top-[17.6svh] z-20 w-[37vw] max-w-[60rem] select-none"
+        />
 
-      <section className="relative z-20 mx-auto hidden min-h-[100svh] w-full flex-col items-center justify-start px-6 pb-48 pt-28 text-center sm:flex sm:pt-46 sm:pb-[18rem] md:px-10 lg:items-start lg:pb-16 lg:pl-[8vw] lg:pr-[37vw] lg:text-left xl:pl-[40vw] xl:pr-[9vw]">
-        <h1 className="max-w-[46rem] text-[clamp(2.4rem,10vw,3.45rem)] font-bold leading-[1.08] tracking-normal text-white sm:text-[clamp(3.55rem,8vw,5.5rem)] lg:text-[clamp(3.6rem,5.1vw,4.7rem)] xl:text-[clamp(3.45rem,4.31vw,3.875rem)]">
-          Find, List &amp; Discover Properties Effortlessly
-        </h1>
+        <img
+          src={assets.desktopPhoneSearch}
+          alt="Livora search results phone mockup"
+          className="pointer-events-none absolute right-[1.6vw] top-[44.2svh] z-20 w-[38vw] max-w-[62rem] select-none"
+        />
 
-        <p className="mt-8 max-w-[42.8rem] text-[clamp(1rem,2.25vw,1.35rem)] font-normal leading-[1.25] text-white/80 lg:text-[1.12rem] xl:text-[1.125rem]">
-          Livora is a modern real estate platform that helps buyers, renters,
-          and property owners connect through a simple, intuitive mobile
-          experience.
-        </p>
+        <div className="relative z-30 ml-[40vw] flex min-h-[100svh] w-[55vw] max-w-[86rem] flex-col items-start pt-[6.4svh] text-left">
+          <img
+            src={assets.logo}
+            alt="Livora"
+            className="ml-[5.8vw] h-auto w-[clamp(11.25rem,9.8vw,18rem)]"
+          />
 
-        <div className="mt-9 flex flex-col items-center gap-4 sm:flex-row lg:items-start">
-          <button
-            type="button"
-            onClick={() => setIsDownloadModalOpen(true)}
-            className="inline-flex h-9 items-center justify-center gap-2 rounded-full border border-white/20 bg-[#081338]/88 px-5 text-sm font-semibold text-white shadow-[0_10px_26px_rgba(0,0,0,0.28)] outline-offset-4 backdrop-blur transition hover:-translate-y-0.5 hover:border-white/35 hover:bg-[#0b1740] focus-visible:outline focus-visible:outline-2 focus-visible:outline-white/80"
-          >
-            <Download className="size-4" aria-hidden="true" />
-            Download APK for Android
-          </button>
-          <a
-            href={GITHUB_REPO_URL}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex h-9 items-center justify-center gap-2 rounded-full border border-[#00ff6a] bg-[#0b3f91]/35 px-4 pr-5 text-base font-normal text-white shadow-[0_10px_26px_rgba(0,0,0,0.18)] outline-offset-4 backdrop-blur transition hover:-translate-y-0.5 hover:bg-[#0b3f91]/55 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#00ff6a]"
-          >
-            <GithubMark />
-            Github
-          </a>
+          <h1 className="mt-[5.4svh] max-w-[75rem] text-[clamp(3.1rem,4.05vw,6.8rem)] font-bold leading-[1.13] tracking-normal text-white">
+            Find, List &amp; Discover Properties Effortlessly
+          </h1>
+
+          <p className="mt-[2.3svh] max-w-[78rem] text-[clamp(1.1rem,1.38vw,2.4rem)] font-normal leading-[1.14] text-white/78">
+            Livora is a modern real estate platform that helps buyers, renters,
+            and property owners connect through a simple, intuitive mobile
+            experience.
+          </p>
+
+          <div className="mt-[2.7svh] flex items-center gap-[1.2vw]">
+            <button
+              type="button"
+              onClick={() => setIsDownloadModalOpen(true)}
+              className="inline-flex h-[clamp(2.25rem,2.15vw,3.8rem)] items-center justify-center gap-[0.6rem] rounded-full border border-white/24 bg-[#020715]/92 px-[clamp(1.1rem,1.55vw,2.55rem)] text-[clamp(0.78rem,0.8vw,1.34rem)] font-bold text-white shadow-[0_14px_38px_rgba(0,0,0,0.25),inset_0_0_0_1px_rgba(37,99,235,0.32)] outline-offset-4 backdrop-blur transition hover:-translate-y-0.5 hover:border-white/36 hover:bg-[#07112b] focus-visible:outline focus-visible:outline-2 focus-visible:outline-white/80"
+            >
+              <Download className="size-[clamp(1rem,1.05vw,1.75rem)]" aria-hidden="true" />
+              Download APK for Android
+            </button>
+            <a
+              href={GITHUB_REPO_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex h-[clamp(2.25rem,2.15vw,3.8rem)] items-center justify-center gap-[0.58rem] rounded-full border border-[#50ff8e] bg-[#0d54b8]/42 px-[clamp(1.05rem,1.28vw,2.05rem)] text-[clamp(1rem,1.2vw,2rem)] font-normal text-white outline-offset-4 backdrop-blur transition hover:-translate-y-0.5 hover:bg-[#0d54b8]/62 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#50ff8e]"
+            >
+              <GithubMark className="size-[clamp(1.2rem,1.42vw,2.28rem)]" />
+              Github
+            </a>
+          </div>
+
+          <p className="mt-[4.5svh] text-[clamp(1.25rem,1.45vw,2.4rem)] font-normal leading-none text-white/66">
+            Krishnandu Gurey
+          </p>
         </div>
       </section>
-
-      <img
-        src={assets.appIconMockup}
-        alt="Livora app icon on an iPhone home screen"
-        className="pointer-events-none absolute bottom-[-5.5rem] right-[-8.5rem] z-10 hidden w-[27rem] max-w-none select-none drop-shadow-[0_30px_58px_rgba(0,0,0,0.58)] sm:block md:bottom-[-6rem] md:right-[-5rem] md:w-[30rem] lg:bottom-0 lg:right-[-0.25rem] lg:w-[28.75vw] lg:min-w-[25rem] lg:max-w-[30rem]"
-      />
-
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] hidden h-32 bg-gradient-to-t from-black/35 to-transparent sm:block" />
 
       {isDownloadModalOpen && (
         <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/65 px-4 py-5 text-left backdrop-blur-sm sm:items-center">
